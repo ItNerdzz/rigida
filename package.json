@@ -7,9 +7,12 @@
     "dev": "vite",
     "host": "vite --host",
     "build": "vite build --base=./",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{pug,html,js,jsx,ts,tsx,css,scss,md,json}\" --config ./.prettierrc --plugin=\"@prettier/plugin-pug\""
   },
   "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
+    "prettier": "^3.3.3",
     "sass": "^1.70.0",
     "vite": "^5.2.0",
     "vite-svg-sprite-wrapper": "^1.3.0",
