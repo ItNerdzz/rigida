@@ -40,19 +40,68 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.h1 {
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 212px;
 }
 
-.locked {
-    overflow: hidden;
+.h2 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.subtext {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 920px){}
+
+@media screen and (max-width: 560px){
+  .h1 {
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 106px;
+
+  }
+
+  .h2 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -1px;
+  }
+
+  .h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .subtext {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+  }
 }

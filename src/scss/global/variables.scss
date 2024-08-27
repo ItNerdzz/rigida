@@ -1,22 +1,25 @@
 // colors
-$primary: plum; // example
-$secondary: lime; // example
-$accent: cyan; // example
-$white: #fff;
-$black: #000;
+$white: #FFFDFA;
+$grey: #F3F4F1;
+$green: #1F472B;
+$green-light: #1F472B;
+$black: #070707;
 
 // indents
-$padding-x: 20px;
-$padding-x-tablet: 30px;
-$padding-x-tablet-landscape: 50px;
-$indent: 20px;
-$indent-small: 10px;
+$indent-xs: 80px;
+$indent-md: 100px;
+$indent-lg: 150px;
 
-// borders
-$br-default: 8px; // example
+$indent-xs-tablet: 60px;
+$indent-md-tablet: 80px;
+$indent-lg-tablet: 100px;
+
+$indent-xs-mobile: 40px;
+$indent-md-mobile: 60px;
+$indent-lg-mobile: 80px;
 
 // fonts
-$base-font: 'font-family: Arial, Helvetica, sans-serif'; // example
+$base-font: 'TT Norms', sans-serif; // example
 
 // media
 $mobile-only: 779px;

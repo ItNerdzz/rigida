@@ -1,8 +1,63 @@
 @font-face {
-    font-family: '';
-    src:
-        url('/fonts/') format('woff2-variations'),
-        url('/fonts/') format('woff-variations'),
-        url('/fonts/') format('ttf-variations');
-    font-weight: 100 900;
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-Bold.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-BoldItalic.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-Black.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-BlackItalic.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-Light.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-Italic.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/fonts/TT_Norms/TTNorms-Regular.woff2') format('woff2'),
+  url('/fonts/TT_Norms/TTNorms-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
