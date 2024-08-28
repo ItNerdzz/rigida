@@ -1,6 +1,5 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import vituum from 'vituum';
-import pug from '@vituum/vite-plugin-pug';
 import ViteSvgSpriteWrapper from 'vite-svg-sprite-wrapper';
 
 export default defineConfig({
@@ -14,8 +13,5 @@ export default defineConfig({
       typeFileName: 'svg-icons',
     }),
     vituum(),
-    pug({
-      root: './src',
-    }),
   ],
 });
