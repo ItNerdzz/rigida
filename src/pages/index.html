@@ -9,23 +9,618 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Home page</title>
     </head>
-
     <body>
         <header class="header">
-            <div class="wrapper">main</div>
+            <div class="wrapper">
+                <div class="header__content">
+                    <a href="/" class="header__logo">
+                        <img src="/images/logo.png" alt="logo" />
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list subtext">
+                            <li class="header__nav-item header__nav-submenu__button">
+                                <a href="#">
+                                    Услуги
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="/images/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__nav-submenu closed">
+                                    <li class="header__nav-submenu__item">
+                                        <a href="#">Изготовление мебели</a>
+                                    </li>
+                                    <li class="header__nav-submenu__item">
+                                        <a href="#">Комплектация жилых помещений</a>
+                                    </li>
+                                    <li class="header__nav-submenu__item">
+                                        <a href="#">Комплектация коммерческих объектов</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item"><a href="#">Проекты</a></li>
+                            <li class="header__nav-item header__nav-submenu__button">
+                                <a href="#">
+                                    О компании
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="/images/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__nav-submenu closed">
+                                    <li class="header__nav-submenu__item">
+                                        <a href="#">Клиентам</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item"><a href="#">Новости</a></li>
+                            <li class="header__nav-item"><a href="#">Отзывы</a></li>
+                            <li class="header__nav-item"><a href="#">Сотрудничество</a></li>
+                            <li class="header__nav-item"><a href="#">Контакты</a></li>
+
+                            <li class="header__nav-item header__nav-item__order">
+                                <button class="button button__green">
+                                    <span class="button__content">ОСТАВИТЬ ЗАЯВКУ</span>
+                                </button>
+                            </li>
+                            <li class="header__nav-item header__nav-item__socials">
+                                <a href="#" class="button button__green">
+                                    <span class="button__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="/images/sprite.svg#instagram"></use></svg
+                                    ></span>
+                                </a>
+                                <a href="#" class="button button__green">
+                                    <span class="button__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="/images/sprite.svg#telegram"></use></svg
+                                    ></span>
+                                </a>
+                                <a href="#" class="button button__green">
+                                    <span class="button__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="/images/sprite.svg#whatsap"></use></svg
+                                    ></span>
+                                </a>
+                            </li>
+                            <li class="header__nav-item header__nav-item__address subtext">
+                                <a href="#">г. Краснодар, ул. Уральская, д 77/7, ТЦ “Мебель Град”, 4 этаж</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <button class="button">
+                            <span class="button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#tel"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="button">
+                            <span class="button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#mail"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="button button__green header__contacts-order">
+                            <span class="button__content">ОСТАВИТЬ ЗАЯВКУ</span>
+                        </button>
+                        <button class="header__burger button button__green">
+                            <span class="button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#burger"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            <section class="banner">
-                <div class="wrapper">banner</div>
+            <section class="home__banner">
+                <div class="wrapper">
+                    <div class="home__banner-content">
+                        <img class="home__banner-img" src="/public/images/banner-home.png" alt="" />
+                        <h1 class="h1 home__banner-title">RIGIDA</h1>
+                        <p class="text home__banner-text">
+                            Мебельное производство и ваш надежный партнер в комплектации коммерческих объектов и жилых
+                            интерьеров в Краснодаре
+                        </p>
+                        <button class="button button__rotate home__banner-button">
+                            <span class="button__content home__banner-button__text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                            <span class="button__icon home__banner-button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="home__banner-links">
+                            <a href="#" class="button button__green">
+                                <span class="button__icon">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="/images/sprite.svg#instagram"></use></svg
+                                ></span>
+                            </a>
+                            <a href="#" class="button button__green">
+                                <span class="button__icon">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="/images/sprite.svg#telegram"></use></svg
+                                ></span>
+                            </a>
+                            <a href="#" class="button button__green">
+                                <span class="button__icon">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="/images/sprite.svg#whatsap"></use></svg
+                                ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                <div class="wrapper">some block</div>
+            <section class="home__about">
+                <div class="wrapper">
+                    <div class="home__about-content">
+                        <h2 class="h2 home__about-title">Создаем уникальные интерьеры для жизни и бизнеса</h2>
+                        <p class="text home__about-text">
+                            Компания RIGIDA специализируется на комплексном оснащении проектов в максимально короткие
+                            сроки и в рамках обозначенного бюджета
+                        </p>
+                        <div class="home__about-row">
+                            <p class="text home__about-row__item">Собственное производство мебели</p>
+                            <p class="text home__about-row__item">Гарантия на мебель 18 месяцев</p>
+                            <p class="text home__about-row__item">Работаем с 2013года</p>
+                            <p class="text home__about-row__item">Сервисное обслуживание БЕСПЛАТНО 3 месяца</p>
+                        </div>
+                        <button class="button button__rotate home__about-button">
+                            <span class="button__content">НАШИ ПРОЕКТЫ</span>
+                            <span class="button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="home__about-banner">
+                    <img class="home__about-banner__logo" src="/public/images/logo-mini.png" alt="" />
+                    <img class="home__about-banner__img" src="/public/images/about-banner-left.png" alt="" />
+                    <img class="home__about-banner__img" src="/public/images/about-banner-right.png" alt="" />
+                </div>
+            </section>
+            <section class="home__services">
+                <div class="wrapper">
+                    <div class="home__services-content">
+                        <div class="home__services-card">
+                            <img class="home__services-card__img" src="/public/images/services-card1.png" alt="" />
+                            <div class="home__services-card__context">
+                                <span class="home__services-card__context-number">1</span>
+                                <div class="home__services-card__context-row">
+                                    <h3 class="h3 home__services-card__context-row__title">
+                                        Изготовление мебели на заказ
+                                    </h3>
+                                    <p class="subtext home__services-card__context-row__subtitle">
+                                        КОРПУСНАЯ МЕБЕЛЬ/ МЯГКАЯ МЕБЕЛЬ
+                                    </p>
+                                    <p class="subtext home__services-card__context-row__text">
+                                        Это идеальное решение для тех, кто хочет получить уникальные предметы интерьера,
+                                        отражающие их личный стиль и потребности
+                                    </p>
+                                    <button class="button button__rotate home__services-card__context-row__button">
+                                        <span class="button__content">ПОДРОБНЕЕ</span>
+                                        <span class="button__icon">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__services-card">
+                            <img class="home__services-card__img" src="/public/images/services-card2.png" alt="" />
+                            <div class="home__services-card__context">
+                                <span class="home__services-card__context-number">2</span>
+                                <div class="home__services-card__context-row">
+                                    <h3 class="h3 home__services-card__context-row__title">
+                                        Комплектация коммерческих объектов
+                                    </h3>
+                                    <p class="subtext home__services-card__context-row__subtitle">
+                                        ОФИС/ ФИТНЕС-КЛУБ/ ОТЕЛЬ/ ШКОЛА/ ШОУРУМ/ КАФЕ/ РЕСТОРАН
+                                    </p>
+                                    <p class="subtext home__services-card__context-row__text">
+                                        Обеспечение всей необходимой мебелью, материалами и декором для создания
+                                        функционального и эффективного пространства, соответствующего требованиям
+                                        бизнеса
+                                    </p>
+                                    <button class="button button__rotate home__services-card__context-row__button">
+                                        <span class="button__content">ПОДРОБНЕЕ</span>
+                                        <span class="button__icon">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__services-card">
+                            <img class="home__services-card__img" src="/public/images/services-card3.png" alt="" />
+                            <div class="home__services-card__context">
+                                <span class="home__services-card__context-number">3</span>
+                                <div class="home__services-card__context-row">
+                                    <h3 class="h3 home__services-card__context-row__title">
+                                        Комплектация жилых помещений
+                                    </h3>
+                                    <p class="subtext home__services-card__context-row__subtitle">
+                                        КВАРТИРА/ ДОМ/ АПАРТАМЕНТЫ/ ПЕНТХАУС/ КОТТЕДЖ
+                                    </p>
+                                    <p class="subtext home__services-card__context-row__text">
+                                        Полное обеспечение квартиры или дома всеми необходимыми элементами, мебелью,
+                                        декором и оборудованием для создания комфортной и функциональной атмосферы,
+                                        соответствующей стилю жизни клиента
+                                    </p>
+                                    <button class="button button__rotate home__services-card__context-row__button">
+                                        <span class="button__content">ПОДРОБНЕЕ</span>
+                                        <span class="button__icon">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home__order">
+                <div class="home__order-titles">
+                    <h2 class="h2 home__order-title">в компании RIGIDA</h2>
+                    <p class="h3 home__order-text">
+                        вы можете заказать <span>MEБЕЛЬ</span> по индивидуальным размерам или обратиться за
+                        <span>КОМПЛЕКТАЦИЕЙ</span> готового дизайн-проекта
+                    </p>
+                </div>
+                <div class="home__order-content">
+                    <img class="home__order-content__img" src="/public/images/order-banner.png" alt="" />
+                    <form class="home__order-form">
+                        <p class="text home__order-form__text">
+                            У нас собственное производство, поэтому мы готовы нашим клиентам предложить лучшие цены на
+                            мебель индивидуального изготовления
+                        </p>
+                        <input class="input" type="text" name="name" placeholder="Имя" />
+                        <input class="input" type="tel" name="tel" placeholder="Контактный телефон" />
+                        <input class="input" type="text" name="file" placeholder="Приложить файл проекта (если есть)" />
+                        <label class="checkbox__wrapper">
+                            <input class="checkbox" type="checkbox" name="" />
+                            <span class="checkbox__mask"></span>
+                            <span class="checkbox__text">
+                                Я согласен на обработку персональных данных и с условиями
+                                <a href="/">политики конфиденциальности</a>
+                            </span>
+                        </label>
+                        <button class="button button__green button__rotate home__order-form__button">
+                            <span class="button__content">ОТПРАВИТЬ</span>
+                            <span class="button__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="home__company">
+                <div class="wrapper">
+                    <div class="home__company-content">
+                        <img class="home__company-logo" src="/public/images/logo-mini-green.png" alt="" />
+                        <h2 class="h2 home__company-title">
+                            Мы не продаем мебель - мы создаем атмосферу, эмоции и новый уровень комфорта
+                        </h2>
+                        <div class="home__company-row">
+                            <div class="home__company-row__item">
+                                <h2 class="h2 home__company-row__item-number">11+</h2>
+                                <p class="subtext home__company-row__item-text">лет опыта</p>
+                            </div>
+                            <div class="home__company-row__item">
+                                <h2 class="h2 home__company-row__item-number">24/7</h2>
+                                <p class="subtext home__company-row__item-text">поддержка клиента</p>
+                            </div>
+                            <div class="home__company-row__item">
+                                <h2 class="h2 home__company-row__item-number">500+</h2>
+                                <p class="subtext home__company-row__item-text">проектов</p>
+                            </div>
+                            <div class="home__company-row__item">
+                                <h2 class="h2 home__company-row__item-number">98%</h2>
+                                <p class="subtext home__company-row__item-text">уровень удовлетворенности</p>
+                            </div>
+                        </div>
+                        <div class="home__company-team">
+                            <div class="home__company-team__content">
+                                <h3 class="subtext home__company-team__title">О КОМПАНИИ</h3>
+                                <p class="text home__company-team__text">
+                                    Мы - команда профессионалов, которая с гордостью представляет собственное
+                                    производство мебели в Краснодаре. Наша цель - предоставить клиентам продукцию,
+                                    соответствующую самым высоким требованиям по качеству и дизайну.
+                                </p>
+                                <p class="text home__company-team__text">
+                                    Компания RIGIDA обеспечивает полноценной меблировкой “под ключ” не только дома и
+                                    квартиры, наши решения уже встроены в пространства ресторанов, фитнес центров,
+                                    офисов, гостиниц и школ. Мы открыты к сотрудничеству с дизайнерами, застройщиками и
+                                    арт-директорами в любой сфере!
+                                </p>
+                                <a href="/" class="button home__company-team__button button button__rotate">
+                                    <span class="button__content">ПОДРОБНЕЕ О НАС </span>
+                                    <span class="button__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <img src="/images/team.png" alt="our team" class="home__company-team__image" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home__factory">
+                <div class="wrapper">
+                    <div class="home__factory-content">
+                        <div class="home__factory-header">
+                            <h2 class="h2 home__factory-title">наше производство</h2>
+                            <p class="text home__factory-text">
+                                Наше производство оснащено современным оборудованием и использует только лучшие
+                                материалы.
+                            </p>
+                            <p class="text home__factory-text">
+                                Мы внимательно следим за каждым этапом - от разработки дизайна до финальной сборки. Это
+                                позволяет нам гарантировать высокое качество и долговечность нашей мебели.
+                            </p>
+                        </div>
+                        <div class="home__factory-row">
+                            <div class="home__factory-slider__container" dir="rtl">
+                                <div class="home__factory-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/1.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/2.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/3.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/4.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/5.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/6.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/7.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/8.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="/images/factory/9.png"
+                                                alt=""
+                                                class="home__factory-slide__image"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="home__factory-slider__buttons">
+                                        <button class="home__factory-slider__prev button button__green">
+                                            <span class="button__icon">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="/images/sprite.svg#arrow-right"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <button class="home__factory-slider__next button button__green">
+                                            <span class="button__icon">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="/images/sprite.svg#arrow-left"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home__factory-video">
+                                <div class="home__factory-video__placeholder">some video would be here</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home__believe">
+                <div class="wrapper">
+                    <div class="home__believe-content">
+                        <h2 class="h2 home__believe-title">Почему доверяют комплектацию нам?</h2>
+                        <div class="home__believe-row">
+                            <img src="/images/believe.png" alt="" class="home__believe-image" />
+                            <div class="home__believe-info">
+                                <div class="home__believe-item">
+                                    <div class="home__believe-item__number">1</div>
+                                    <div class="home__believe-item__content">
+                                        <h3 class="h3 home__believe-item__title">собственное производство мебели</h3>
+                                        <p class="subtext home__believe-item__text">
+                                            Изготавливаем мебель с учетом всех пожеланий клиента
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="home__believe-item">
+                                    <div class="home__believe-item__number">2</div>
+                                    <div class="home__believe-item__content">
+                                        <h3 class="h3 home__believe-item__title">проверенная база поставщиков</h3>
+                                        <p class="subtext home__believe-item__text">
+                                            Большая база поставщиков, с которыми работаем более 10 лет
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="home__believe-item">
+                                    <div class="home__believe-item__number">3</div>
+                                    <div class="home__believe-item__content">
+                                        <h3 class="h3 home__believe-item__title">соблюдаем сроки</h3>
+                                        <p class="subtext home__believe-item__text">
+                                            Мы ценим ваше время и понимаем, что соблюдение сроков - залог успешного
+                                            проекта
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="home__believe-item">
+                                    <div class="home__believe-item__number">4</div>
+                                    <div class="home__believe-item__content">
+                                        <h3 class="h3 home__believe-item__title">освобождаем ваше время</h3>
+                                        <p class="subtext home__believe-item__text">
+                                            Возьмем на себя все этапы процесса: от выбора материалов до контроля
+                                            поставок, освобождая ваше время для более важных задач
+                                        </p>
+                                    </div>
+                                </div>
+
+								<button class="button home__believe-button button button__rotate">
+									<span class="button__content">ОСТАВИТЬ ЗАЯВКУ </span>
+									<span class="button__icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="/images/sprite.svg#arrow-top-right"></use>
+                                        </svg>
+                                    </span>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="wrapper">footer</div>
+            <div class="wrapper">
+                <div class="footer__content">
+                    <div class="footer__contacts">
+                        <a href="/" class="footer__contacts-logo">
+                            <img src="/images/logo-light.png" alt="logo" />
+                        </a>
+                        <a href="tel:+7 (918) 663-57-78" class="footer__contacts-link">
+                            <span class="footer__contacts-link__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#tel"></use>
+                                </svg>
+                            </span>
+                            <span class="footer__contacts-link__text">+7 (918) 663-57-78</span>
+                        </a>
+                        <a href="mailto:rigidacompany@mail.ru" class="footer__contacts-link">
+                            <span class="footer__contacts-link__icon">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#mail"></use>
+                                </svg>
+                            </span>
+                            <span class="footer__contacts-link__text">rigidacompany@mail.ru</span>
+                        </a>
+                        <p class="footer__contacts-props">
+                            ООО “РИГИДА”<br />
+                            ИНН 2312209428<br />
+                            ОГРН 1132312012678
+                        </p>
+                        <p class="footer__contacts-privacy">Политика конфиденциальности</p>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links-column">
+                            <h4 class="footer__links-column__title">МЕНЮ</h4>
+                            <a href="/" class="footer__links-column__item">О компании</a>
+                            <a href="/" class="footer__links-column__item">Проекты</a>
+                            <a href="/" class="footer__links-column__item">Услуги</a>
+                            <a href="/" class="footer__links-column__item">Отзывы</a>
+                            <a href="/" class="footer__links-column__item">Сотрудничество</a>
+                            <a href="/" class="footer__links-column__item">Новости</a>
+                            <a href="/" class="footer__links-column__item">Контакты</a>
+                        </div>
+                        <div class="footer__links-column">
+                            <h4 class="footer__links-column__title">ДЛЯ КЛИЕНТА</h4>
+                            <a href="/" class="footer__links-column__item">Услуга изготовление мебели на заказ</a>
+                            <a href="/" class="footer__links-column__item">Услуга комплектация коммерческих объектов</a>
+                            <a href="/" class="footer__links-column__item">Услуга комплектация жилых помещений</a>
+                            <a href="/" class="footer__links-column__item">Производство</a>
+                            <a href="/" class="footer__links-column__item">Доставка</a>
+                            <a href="/" class="footer__links-column__item">Оплата</a>
+                            <a href="/" class="footer__links-column__item">Установка</a>
+                        </div>
+                        <div class="footer__links-column">
+                            <h4 class="footer__links-column__title">СВЯЗАТЬСЯ</h4>
+                            <a href="/" class="footer__links-column__item">Instagram*</a>
+                            <a href="/" class="footer__links-column__item">Telegram</a>
+                            <a href="/" class="footer__links-column__item">WhatsApp</a>
+                            <a href="/" class="footer__links-column__item">VKontakte</a>
+                            <a href="/" class="footer__links-column__item">YouTube</a>
+                            <a href="/" class="footer__links-column__item">Pinterest</a>
+                            <p class="footer__links-column__item-meta">
+                                *Meta - организация запрещена на территории РФ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__feedback">
+                        <a href="#">
+                            <svg aria-hidden="true">
+                                <use xlink:href="/images/sprite.svg#review"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg aria-hidden="true">
+                                <use xlink:href="/images/sprite.svg#gis"></use>
+                            </svg>
+                        </a>
+                        <div class="footer__feedback-link">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#developer-icon"></use>
+                                </svg>
+                            </a>
+                            <p class="footer__feedback-link__text">Разработка сайта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="/src/javascript/app.js" type="module"></script>
+        <script src="/src/javascript/home.js" type="module"></script>
     </body>
 </html>

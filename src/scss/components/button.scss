@@ -1,0 +1,107 @@
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    &__content {
+        border-radius: 80px;
+        border: 1px solid $green;
+        padding: 12px 26px;
+        color: $green;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
+        transition: 0.2s;
+        flex: 1 0 auto;
+    }
+
+    &__icon {
+        border-radius: 80px;
+        border: 1px solid $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        max-width: 40px;
+        max-height: 40px;
+        height: 100%;
+        width: 100%;
+        transition: 0.2s;
+
+        & > svg {
+            width: 20px;
+            height: 20px;
+            color: $green;
+        }
+    }
+
+    &:hover > &__content {
+        color: $white;
+        background: $green;
+
+        & > svg {
+            color: $white;
+        }
+    }
+
+    &:hover > &__icon {
+        color: $white;
+        background: $green;
+
+        & > svg {
+            color: $white;
+        }
+    }
+
+    &__rotate:hover > &__icon {
+        transform: rotate(45deg);
+    }
+
+    &__green > &__content {
+        color: $grey;
+        background: $green;
+    }
+
+    &__green:hover > &__content {
+        background: $grey;
+        color: $green;
+    }
+
+    &__green > &__icon {
+        background: $green;
+
+        & > svg {
+            color: $grey;
+        }
+    }
+
+    &__green:hover > &__icon {
+        background: $grey;
+        color: $green;
+
+        & > svg {
+            color: $green;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .button {
+        &__content {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .button {
+        &__content {
+            padding: 10px 18px;
+            font-size: 12px;
+        }
+    }
+}

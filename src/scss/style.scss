@@ -4,10 +4,13 @@
 @import 'global/global.scss';
 
 // LAYOUT
-@import 'layout/header.scss';
-@import 'layout/wrapper.scss';
-@import 'layout/footer.scss';
+@import 'components/button.scss';
+@import 'components/form.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/wrapper.scss';
 
 // PAGES
 @import 'pages/home';
 @import 'pages/404';
+
