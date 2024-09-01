@@ -3,7 +3,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiper = new Swiper('.home__factory-slider', {
+new Swiper('.home__factory-slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
@@ -21,6 +21,45 @@ const swiper = new Swiper('.home__factory-slider', {
         },
     },
 });
+
+
+new Swiper('.home__client-slider', {
+	slidesPerView: 4,
+	spaceBetween: 0,
+	loop:true,
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+		},
+
+		720: {
+			slidesPerView: 3,
+		},
+		1110: {
+			slidesPerView: 4,
+		},
+	},
+
+});
+new Swiper('.home__partners-slider', {
+	slidesPerView: 4,
+	spaceBetween: 0,
+	loop:true,
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+		},
+
+		720: {
+			slidesPerView: 3,
+		},
+		1110: {
+			slidesPerView: 4,
+		},
+	},
+
+});
+
 
 const { innerWidth } = window;
 const isMobile = innerWidth < 1200;
