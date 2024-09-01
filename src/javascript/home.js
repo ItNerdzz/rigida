@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Accordion from 'accordion-js';
 
 new Swiper('.home__factory-slider', {
     modules: [Navigation],
@@ -60,6 +61,8 @@ new Swiper('.home__partners-slider', {
 
 });
 
+
+new Accordion(['.home__working-row', '.home__question-row__items']);
 
 const { innerWidth } = window;
 const isMobile = innerWidth < 1200;
