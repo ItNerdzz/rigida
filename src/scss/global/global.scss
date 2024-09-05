@@ -27,7 +27,7 @@ body {
 }
 
 body:has(header.header) {
-	padding-top: 81px;
+    padding-top: 81px;
 }
 
 body main {
@@ -45,69 +45,116 @@ a {
 }
 
 .h1 {
-  font-size: 180px;
-  font-weight: 400;
-  line-height: 212px;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 212px;
 }
 
 .h2 {
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 60px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
 }
 
 .h3 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.subtext {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
-}
-
-@media screen and (max-width: 920px){
-
-}
-
-@media screen and (max-width: 680px){
-  .h1 {
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 106px;
-
-  }
-
-  .h2 {
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: -1px;
-  }
-
-  .h3 {
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
-  }
+}
 
-  .text {
+.subtext {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-  }
-
-  .subtext {
-    font-size: 14px;
     font-weight: 300;
-    line-height: 14px;
-  }
+    line-height: 16px;
+}
+
+.text-green {
+	color: $green;
+}
+
+.page {
+    &__banner {
+        background: $green;
+        padding: 40px 0 100px;
+        color: $white;
+        &-breadcrumbs {
+            font-size: 14px;
+            margin-bottom: 40px;
+
+            & > * {
+                color: #f3f4f180;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 14px;
+            }
+
+            & > a:hover {
+                text-decoration: underline;
+            }
+        }
+		&-number {
+			width: 40px;
+			height: 40px;
+			border: 1px solid $white;
+			border-radius: 1000px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 0 auto 20px auto;
+		}
+        &-text {
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &-title {
+            margin: 20px 0 0 0;
+            text-transform: uppercase;
+            text-align: center;
+			line-height: 130% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+}
+
+@media screen and (max-width: 680px) {
+    .h1 {
+        font-size: 90px;
+        font-weight: 400;
+        line-height: 106px;
+    }
+
+    .h2 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: -1px;
+    }
+
+    .h3 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .subtext {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+    }
 }

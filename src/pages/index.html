@@ -19,7 +19,7 @@
                     <nav class="header__nav">
                         <ul class="header__nav-list subtext">
                             <li class="header__nav-item header__nav-submenu__button">
-                                <a href="#">
+                                <a href="/services.html" class="header__nav-item__trigger">
                                     Услуги
                                     <svg aria-hidden="true">
                                         <use xlink:href="/images/sprite.svg#arrow-down"></use>
@@ -27,19 +27,19 @@
                                 </a>
                                 <ul class="header__nav-submenu closed">
                                     <li class="header__nav-submenu__item">
-                                        <a href="#">Изготовление мебели</a>
+                                        <a href="/service.html">Изготовление мебели</a>
                                     </li>
                                     <li class="header__nav-submenu__item">
-                                        <a href="#">Комплектация жилых помещений</a>
+                                        <a href="/service.html">Комплектация жилых помещений</a>
                                     </li>
                                     <li class="header__nav-submenu__item">
-                                        <a href="#">Комплектация коммерческих объектов</a>
+                                        <a href="/service.html">Комплектация коммерческих объектов</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__nav-item"><a href="#">Проекты</a></li>
+                            <li class="header__nav-item"><a href="#" class="header__nav-item__trigger">Проекты</a></li>
                             <li class="header__nav-item header__nav-submenu__button">
-                                <a href="#">
+                                <a href="/about.html" class="header__nav-item__trigger">
                                     О компании
                                     <svg aria-hidden="true">
                                         <use xlink:href="/images/sprite.svg#arrow-down"></use>
@@ -51,10 +51,12 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__nav-item"><a href="#">Новости</a></li>
-                            <li class="header__nav-item"><a href="#">Отзывы</a></li>
-                            <li class="header__nav-item"><a href="#">Сотрудничество</a></li>
-                            <li class="header__nav-item"><a href="#">Контакты</a></li>
+                            <li class="header__nav-item"><a href="#" class="header__nav-item__trigger">Новости</a></li>
+                            <li class="header__nav-item"><a href="#" class="header__nav-item__trigger">Отзывы</a></li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-item__trigger">Сотрудничество</a>
+                            </li>
+                            <li class="header__nav-item"><a href="#" class="header__nav-item__trigger">Контакты</a></li>
 
                             <li class="header__nav-item header__nav-item__order">
                                 <button class="button button__green">
@@ -82,7 +84,9 @@
                                 </a>
                             </li>
                             <li class="header__nav-item header__nav-item__address subtext">
-                                <a href="#">г. Краснодар, ул. Уральская, д 77/7, ТЦ “Мебель Град”, 4 этаж</a>
+                                <span class="header__nav-item__trigger"
+                                    >г. Краснодар, ул. Уральская, д 77/7, ТЦ “Мебель Град”, 4 этаж</span
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -603,7 +607,9 @@
             <section class="home__working">
                 <div class="wrapper">
                     <div class="home__working-content">
-                        <h2 class="h2 home__working-title">процесс работы с нашей фабрикой</h2>
+                        <h2 class="h2 home__working-title">
+                            <span class="text-green">процесс работы</span> с нашей фабрикой
+                        </h2>
                         <div class="home__working-row">
                             <div class="home__working-row__item ac">
                                 <div class="home__working-row__item-number">

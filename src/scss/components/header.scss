@@ -43,7 +43,7 @@
                 display: none;
             }
 
-            & > a {
+            &__trigger {
                 display: flex;
                 align-items: center;
                 gap: 3px;
@@ -53,6 +53,7 @@
                 font-weight: 400;
                 line-height: 100%;
                 transition: 0.3s;
+				cursor: pointer;
 
                 > svg {
                     display: block;
