@@ -740,6 +740,13 @@
             text-align: center;
             text-transform: uppercase;
         }
+		&-text{
+			color:$grey;
+			text-align: center;
+			text-transform: uppercase;
+			margin: -100px auto 100px;
+			max-width: 770px;
+		}
 
         &-row {
             display: grid;
@@ -1199,6 +1206,7 @@
                 margin: 0 0 60px;
             }
 
+
             &-row {
                 grid-template-columns: 1fr 1fr;
 
@@ -1400,6 +1408,9 @@
             &-title {
                 margin: 0 0 60px;
             }
+			&-text{
+				margin-top: -35px;
+			}
 
             &-row {
                 grid-template-columns: 1fr;
