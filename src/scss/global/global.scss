@@ -83,6 +83,10 @@ a {
         background: $green;
         padding: 40px 0 100px;
         color: $white;
+		&.light {
+			background: $grey;
+			color: $green;
+		}
         &-breadcrumbs {
             font-size: 14px;
             margin-bottom: 40px;
@@ -98,6 +102,14 @@ a {
                 text-decoration: underline;
             }
         }
+		&.light &-breadcrumbs > * {
+			color: #1F472B80;
+		}
+		&-image {
+			display: block;
+			max-width: 190px;
+			margin: 0 auto;
+		}
 		&-number {
 			width: 40px;
 			height: 40px;
