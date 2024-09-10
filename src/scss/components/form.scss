@@ -6,6 +6,28 @@
     display: block;
     width: 100%;
 	background: none;
+	font-size: 16px;
+	font-weight: 300;
+
+    &::placeholder {
+        color: rgba(31, 71, 43, 0.5);
+    }
+}
+
+.textarea {
+    padding: 10px;
+    border-radius:20px;
+    border: 1px solid $green;
+    outline-color: $green;
+    display: block;
+    width: 100%;
+	background: none;
+	height: 90px;
+	overflow: auto;
+	resize: none;
+	font-family: $base-font;
+	font-size: 16px;
+	font-weight: 300;
 
     &::placeholder {
         color: rgba(31, 71, 43, 0.5);

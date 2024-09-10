@@ -265,7 +265,7 @@
                 max-width: 604px;
             }
 
-            & > input {
+            & > input, textarea {
                 margin-bottom: 10px;
             }
 
@@ -810,7 +810,7 @@
 					}
 				}
 
-                & > input {
+                & > input, textarea {
                     margin-bottom: 10px;
                 }
 
@@ -1012,6 +1012,13 @@
             text-align: center;
             margin: 0 auto 80px;
             max-width: 880px;
+
+			&.small {
+				text-align: left;
+				max-width: 420px;
+				margin-left: 0;
+				margin-bottom: 40px;
+			}
         }
 
         &-row {
