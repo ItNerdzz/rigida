@@ -1,0 +1,106 @@
+.cooperation {
+    &__company {
+        padding: 100px 0;
+        background: $white;
+    }
+
+    &__projects {
+        padding: 50px 0 100px;
+
+        &-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-names {
+            &__title {
+                color: $green;
+                text-transform: uppercase;
+                margin: 0 0 20px;
+            }
+
+            &__text {
+                color: $black;
+                margin-bottom: 60px;
+            }
+        }
+
+        &-card {
+            & > img {
+                width: 100%;
+				height: 100%;
+               object-fit: cover;
+            }
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &__names {
+                display: flex;
+                justify-content: space-between;
+                gap: 27px;
+
+                &-title {
+                    color: $black;
+                    margin: 0;
+                }
+
+                &-text {
+                    color: rgba(31, 71, 43, 0.5);
+                    margin: 0;
+                }
+            }
+        }
+
+		&-slider {
+			&__container {
+				width: 100%;
+				overflow: hidden;
+			}
+
+			&__image {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			&__buttons {
+				display: none;
+				align-items: center;
+				gap: 20px;
+				justify-content: flex-start;
+				width: fit-content;
+				margin:35px auto 0;
+			}
+		}
+    }
+}
+
+@media (max-width: 820px) {
+    .cooperation {
+        &__projects {
+			&-row{
+				grid-template-columns: 1fr;
+				&-empty{
+					display: none;
+				}
+			}
+            &-slider {
+               &__buttons{
+				   display: flex;
+			   }
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+	.cooperation{
+		&__projects{
+			padding: 30px 0 50px;
+		}
+		&__company{
+			padding: 20px 0;
+		}
+	}
+}

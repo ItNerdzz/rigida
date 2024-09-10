@@ -7,7 +7,7 @@
             grid-template-columns: 1fr 1fr;
             text-align: left;
             gap: 50px;
-            margin-bottom: 80px;
+
 
             &__description {
                 max-width: 70%;
@@ -24,6 +24,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+			margin-top: 80px;
         }
 
         &-card {

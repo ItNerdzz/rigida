@@ -60,6 +60,28 @@ new Swiper('.home__partners-slider', {
 	},
 
 });
+new Swiper('.cooperation__projects-slider', {
+	modules: [Navigation],
+	slidesPerView: 2,
+	spaceBetween: 20,
+	loop:true,
+	slidesOffsetBefore: 2,
+	navigation: {
+		nextEl: '.cooperation__projects-slider__next',
+		prevEl: '.cooperation__projects-slider__prev',
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.2,
+		},
+		720: {
+			slidesPerView: 2,
+		},
+		820: {
+			slidesPerView: 4,
+		},
+	},
+});
 
 
 new Accordion(['.home__working-row', '.home__question-row__items']);

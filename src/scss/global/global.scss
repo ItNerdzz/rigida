@@ -60,6 +60,7 @@ a {
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
+	margin: 0;
 }
 
 .text {
@@ -87,6 +88,10 @@ a {
 			background: $grey;
 			color: $green;
 		}
+		&.white{
+			background: $white;
+			color:$green
+		}
         &-breadcrumbs {
             font-size: 14px;
             margin-bottom: 40px;
@@ -104,6 +109,10 @@ a {
         }
 		&.light &-breadcrumbs > * {
 			color: #1F472B80;
+		}
+		&.white &-breadcrumbs > * {
+			color:  rgba(31, 71, 43, 0.50);
+
 		}
 		&-image {
 			display: block;
