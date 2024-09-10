@@ -1,0 +1,147 @@
+.feedback {
+    background: $white;
+    padding: 100px 0;
+
+    &__titles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		gap: 30px;
+
+        &-column {
+            display: flex;
+            text-align: start;
+			align-items: center;
+			margin-bottom: 80px;
+			gap: 67px;
+			&>a>svg{
+				display: block;
+				max-width: 160px;
+				max-height: 40px;
+				width: 100%;
+				height: 100%;
+			}
+			&__text{
+				color: $black;
+				margin: 0;
+			}
+        }
+    }
+
+	&__row{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		&-item{
+			background: $grey;
+			padding: 20px;
+			display: grid;
+			grid-template-columns:2fr 1fr 210px;
+			&__names{
+				display: flex;
+				gap: 20px;
+				&>span{
+					border-radius: 60px;
+					border: 1px solid $green;
+					padding: 20px 20px;
+					max-width: 40px;
+					max-height: 40px;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				&-column{
+					display: flex;
+					flex-direction: column;
+					&>h3{
+						color: $black;
+						text-transform: uppercase;
+						margin: 0 0 18px;
+					}
+					&>p{
+						color: rgba(31, 71, 43, 0.50);
+						margin: 0;
+					}
+				}
+			}
+
+			&__description{
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				padding-right: 20px;
+				&-text{
+					color: var(--, #070707);
+					font-weight: 300;
+					margin: 0;
+				}
+			}
+
+			&__platforms{
+				display: flex;
+				width: 210px;
+				height: 40px;
+				padding: 10px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 80px;
+				border: 1px solid $green;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.feedback {
+		&__row{
+
+			&-item{
+				position: relative;
+				grid-template-columns:1fr 1fr;
+
+				&__platforms{
+					position: absolute;
+					left: 20px;
+					bottom: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px){
+	.feedback {
+		padding: 80px 0;
+		&__titles{
+			grid-template-columns: 1fr;
+			gap: 0;
+			&-column{
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 520px){
+	.feedback {
+		padding:60px 0;
+		&__titles{
+			grid-template-columns: 1fr;
+		}
+		&__row{
+			&-item{
+				grid-template-columns:1fr;
+
+				&__description{
+					margin-top: 30px;
+				}
+
+				&__platforms{
+					position: static;
+					width: 100%	;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}

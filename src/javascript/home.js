@@ -82,7 +82,31 @@ new Swiper('.cooperation__projects-slider', {
 		},
 	},
 });
-
+new Swiper('.letters__slider', {
+	modules: [Navigation],
+	slidesPerView: 2,
+	spaceBetween: 20,
+	loop:true,
+	slidesOffsetBefore: 2,
+	navigation: {
+		nextEl: '.letters__slider-next',
+		prevEl: '.letters__slider-prev',
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.1,
+		},
+		520: {
+			slidesPerView: 2,
+		},
+		720: {
+			slidesPerView: 3,
+		},
+		820: {
+			slidesPerView: 4,
+		},
+	},
+});
 
 new Accordion(['.home__working-row', '.home__question-row__items']);
 
