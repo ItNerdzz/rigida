@@ -37,7 +37,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__nav-item"><a href="/projects.html" class="header__nav-item__trigger">Проекты</a></li>
+                            <li class="header__nav-item">
+                                <a href="/projects.html" class="header__nav-item__trigger">Проекты</a>
+                            </li>
                             <li class="header__nav-item header__nav-submenu__button">
                                 <a href="/about.html" class="header__nav-item__trigger">
                                     О компании
@@ -51,15 +53,21 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__nav-item"><a href="/news.html" class="header__nav-item__trigger">Новости</a></li>
-                            <li class="header__nav-item"><a href="/reviews.html" class="header__nav-item__trigger">Отзывы</a></li>
+                            <li class="header__nav-item">
+                                <a href="/news.html" class="header__nav-item__trigger">Новости</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="/reviews.html" class="header__nav-item__trigger">Отзывы</a>
+                            </li>
                             <li class="header__nav-item">
                                 <a href="/cooperation.html" class="header__nav-item__trigger">Сотрудничество</a>
                             </li>
-                            <li class="header__nav-item"><a href="/contacts.html" class="header__nav-item__trigger">Контакты</a></li>
+                            <li class="header__nav-item">
+                                <a href="/contacts.html" class="header__nav-item__trigger">Контакты</a>
+                            </li>
 
                             <li class="header__nav-item header__nav-item__order">
-                                <button class="button button__green">
+                                <button class="button button__green open-popup" data-popup="home-order">
                                     <span class="button__content">ОСТАВИТЬ ЗАЯВКУ</span>
                                 </button>
                             </li>
@@ -105,7 +113,7 @@
                                 </svg>
                             </span>
                         </button>
-                        <button class="button button__green header__contacts-order">
+                        <button class="button button__green header__contacts-order open-popup" data-popup="home-order">
                             <span class="button__content">ОСТАВИТЬ ЗАЯВКУ</span>
                         </button>
                         <button class="header__burger button button__green">
@@ -129,7 +137,10 @@
                             Мебельное производство и ваш надежный партнер в комплектации коммерческих объектов и жилых
                             интерьеров в Краснодаре
                         </p>
-                        <button class="button button__rotate home__banner-button">
+                        <button
+                            class="button button__rotate home__banner-button open-popup"
+                            data-popup="home-consultation"
+                        >
                             <span class="button__content home__banner-button__text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                             <span class="button__icon home__banner-button__icon">
                                 <svg aria-hidden="true">
@@ -302,7 +313,12 @@
                                 <a href="/">политики конфиденциальности</a>
                             </span>
                         </label>
-                        <button class="button button__green button__rotate home__order-form__button">
+                        <!--								next button would not submit the form just to show as popup is opening. Please remove type=button and open the popup manually after form submission-->
+                        <button
+                            type="button"
+                            class="button button__green button__rotate home__order-form__button open-popup"
+                            data-popup="home-thank-you"
+                        >
                             <span class="button__content">ОТПРАВИТЬ</span>
                             <span class="button__icon">
                                 <svg aria-hidden="true">
@@ -476,7 +492,9 @@
             <section class="home__believe">
                 <div class="wrapper">
                     <div class="home__believe-content">
-                        <h2 class="h2 home__believe-title">Почему доверяют комплектацию нам?</h2>
+                        <h2 class="h2 home__believe-title">
+                            Почему <span class="text-green">доверяют</span> комплектацию нам?
+                        </h2>
                         <div class="home__believe-row">
                             <img src="/images/believe.png" alt="" class="home__believe-image" />
                             <div class="home__believe-info">
@@ -518,7 +536,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <button class="button home__believe-button button button__rotate">
+                                <button
+                                    class="button home__believe-button button button__rotate open-popup"
+                                    data-popup="home-order"
+                                >
                                     <span class="button__content">ОСТАВИТЬ ЗАЯВКУ </span>
                                     <span class="button__icon">
                                         <svg aria-hidden="true">
@@ -848,7 +869,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="button home__working-button button button__rotate">
+                        <button
+                            class="button home__working-button button button__rotate open-popup"
+                            data-popup="home-consultation"
+                        >
                             <span class="button__content">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                             <span class="button__icon">
                                 <svg aria-hidden="true">
@@ -1552,6 +1576,95 @@
                 </div>
             </div>
         </footer>
+
+        <section class="popup popup__container" data-popup="home-consultation">
+            <div class="popup__body">
+                <button class="popup__close close-popup">
+                    <svg aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <img src="/images/mockup/mockup.png" alt="" class="popup__cover" />
+                <h3 class="h3 popup__header text-center">получить консультацию</h3>
+                <form class="popup__form">
+                    <p class="subtext popup__text text-center">
+                        Оставьте Ваши контакты и мы свяжемся с Вами в течение 15 минут, чтобы обсудить детали проекта и
+                        предложить оптимальное решение
+                    </p>
+                    <input class="input" type="text" name="name" placeholder="Ваше имя" />
+                    <input class="input" type="tel" name="tel" placeholder="+7 (988) 878-56-44" />
+                    <button class="button button__green">
+                        <span class="button__content">ОТПРАВИТЬ</span>
+                    </button>
+                    <label class="checkbox__wrapper">
+                        <input class="checkbox" type="checkbox" name="" />
+                        <span class="checkbox__mask"></span>
+                        <span class="checkbox__text"> Даю согласие на обработку персональных данных </span>
+                    </label>
+                </form>
+            </div>
+        </section>
+
+        <section class="popup popup__container popup__side" data-popup="home-order">
+            <div class="popup__body">
+                <button class="popup__close close-popup">
+                    <svg aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <h3 class="h3 popup__header">оставить заявку</h3>
+                <form class="popup__form">
+                    <p class="subtext popup__text">
+                        Оставьте Ваши контакты и мы свяжемся с Вами в течение 15 минут, чтобы обсудить детали проекта и
+                        предложить оптимальное решение
+                    </p>
+                    <input class="input" type="text" name="name" placeholder="Ваше имя" />
+                    <input class="input" type="tel" name="tel" placeholder="+7 (988) 878-56-44" />
+                    <button class="button button__green">
+                        <span class="button__content">ОТПРАВИТЬ</span>
+                    </button>
+                    <label class="checkbox__wrapper">
+                        <input class="checkbox" type="checkbox" name="" />
+                        <span class="checkbox__mask"></span>
+                        <span class="checkbox__text"> Даю согласие на обработку персональных данных </span>
+                    </label>
+                </form>
+            </div>
+        </section>
+
+        <section class="popup popup__container" data-popup="home-thank-you">
+            <div class="popup__body">
+                <button class="popup__close close-popup">
+                    <svg aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <img src="/images/logo-mini-green.png" alt="" class="popup__logo" />
+                <h2 class="h2 popup__title text-center">Спасибо!</h2>
+                <p class="h3 popup__subtitle text-center">ваша заявка успешно отправлена</p>
+                <p class="subtext popup__text text-center not-wide">
+                    Мы свяжемся с Вами в течение 15 минут, чтобы обсудить детали проекта и предложить оптимальное
+                    решение
+                </p>
+                <div class="popup__socials">
+                    <a href="#" class="button button__green">
+                        <span class="button__icon">
+                            <svg aria-hidden="true"><use xlink:href="/images/sprite.svg#instagram"></use></svg>
+                        </span>
+                    </a>
+                    <a href="#" class="button button__green">
+                        <span class="button__icon">
+                            <svg aria-hidden="true"><use xlink:href="/images/sprite.svg#telegram"></use></svg>
+                        </span>
+                    </a>
+                    <a href="#" class="button button__green">
+                        <span class="button__icon">
+                            <svg aria-hidden="true"><use xlink:href="/images/sprite.svg#whatsap"></use></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <script src="/src/javascript/app.js" type="module"></script>
         <script src="/src/javascript/home.js" type="module"></script>

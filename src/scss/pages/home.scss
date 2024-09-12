@@ -621,15 +621,13 @@
             margin-bottom: 60px;
 
             &__item {
-                & > img {
-                    width: 100%;
-
-                }
-				&>a>img{
+				& img{
 					max-height: 454px;
 					height: 100%;
+					width: 100%;
 					margin-bottom: 10px;
-
+					object-fit: cover;
+					object-position: center;
 				}
 
                 &-names {
@@ -1683,12 +1681,12 @@
 @media (max-width: 720px) {
     .home {
         &__banner {
+			position: relative;
+			overflow: hidden;
+
             &-content {
                 padding: 40px 0 54px;
             }
-
-            position: relative;
-            overflow: hidden;
 
             &:after {
                 backdrop-filter: none;

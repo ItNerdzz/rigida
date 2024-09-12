@@ -26,6 +26,10 @@ body {
     overflow-x: hidden;
 }
 
+body.static {
+	overflow-y: hidden;
+}
+
 body:has(header.header) {
     padding-top: 81px;
 }
@@ -81,6 +85,9 @@ a {
 
 .text-green {
     color: $green;
+}
+.text-center {
+	text-align: center;
 }
 
 .page {

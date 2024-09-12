@@ -1,0 +1,163 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+	padding: 80px 40px 80px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    transition: opacity ease 500ms;
+	backdrop-filter: blur(2px);
+	align-items: center;
+	justify-content: center;
+	overflow-y: hidden;
+
+    &:not(.popup-show) {
+        opacity: 0;
+    }
+
+    &__body {
+		background: $white;
+		border: 1px solid #1F472B80; // 50% opacity
+        max-width: 720px;
+		max-height: 100%;
+		width: 100%;
+        overflow: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+    }
+
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        border: none;
+		background: #1F472B80;
+		cursor: pointer;
+        transition: 0.2s;
+		border-radius: 100px;
+		height: 56px;
+		width: 56px;
+        z-index: 2;
+		font-size: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg {
+			width: 40px;
+			height: 40px;
+		}
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+	&__cover {
+		height: 230px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__header {
+		padding: 40px 20px 20px;
+		border-bottom: 1px solid #1F472B80;
+		text-transform: uppercase;
+		color: $green;
+	}
+
+	&__form {
+		max-width: 395px;
+		padding: 20px 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap:10px;
+
+		.button {
+			margin-top: 50px;
+			width: 100%;
+		}
+
+		.checkbox {
+			&__wrapper {
+				margin-top: 10px;
+			}
+			&__text {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $green;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		color: $green;
+		margin-bottom: 30px;
+		font-weight: 400;
+	}
+
+	&__text {
+		color: #191919CC;
+		font-weight: 300;
+		margin-bottom: 30px;
+
+		&.not-wide {
+			max-width: 395px;
+			margin: 0 auto 30px;
+			padding: 0 10px;
+		}
+	}
+
+	&__logo {
+		max-width: 190px;
+		width: 100%;
+		display: block;
+		margin: 60px auto 120px;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		justify-content: center;gap:10px;
+		margin-bottom: 60px;
+	}
+
+	&__side {
+		justify-content: flex-end;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-top: 0;
+
+		.button {
+			margin-top: auto;
+		}
+	}
+
+	&__side  &__body {
+		max-width: 450px;
+		height: 100%;
+		border: none;
+		border-radius: 10px 0 0 10px;
+	}
+	&__side &__header {
+		padding: 46px 40px 46px;
+	}
+	&__side &__form{
+		flex: auto;
+		align-items: flex-start;
+		padding-right: 20px;
+	}
+}
