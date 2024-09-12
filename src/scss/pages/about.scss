@@ -96,6 +96,11 @@
             max-width: 50%;
             margin-left: auto;
         }
+		&-title{
+			color: $green;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
         &-text {
             margin: 0 0 40px 0;
         }

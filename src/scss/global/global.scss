@@ -48,35 +48,39 @@ a {
     font-size: 180px;
     font-weight: 400;
     line-height: 212px;
+	margin: 0;
 }
 
 .h2 {
     font-size: 60px;
     font-weight: 400;
-    line-height: 60px;
+	line-height: 100%;
+	margin: 0;
 }
 
 .h3 {
     font-size: 24px;
     font-weight: 400;
-    line-height: 24px;
-	margin: 0;
+	line-height: 100%;
+    margin: 0;
 }
 
 .text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 100%;
+	margin: 0;
 }
 
 .subtext {
     font-size: 16px;
     font-weight: 300;
-    line-height: 16px;
+    line-height: 100%;
+	margin: 0;
 }
 
 .text-green {
-	color: $green;
+    color: $green;
 }
 
 .page {
@@ -84,14 +88,17 @@ a {
         background: $green;
         padding: 40px 0 100px;
         color: $white;
-		&.light {
-			background: $grey;
-			color: $green;
-		}
-		&.white{
-			background: $white;
-			color:$green
-		}
+
+        &.light {
+            background: $grey;
+            color: $green;
+        }
+
+        &.white {
+            background: $white;
+            color: $green;
+        }
+
         &-breadcrumbs {
             font-size: 14px;
             margin-bottom: 40px;
@@ -107,39 +114,44 @@ a {
                 text-decoration: underline;
             }
         }
-		&.light &-breadcrumbs > * {
-			color: #1F472B80;
-		}
-		&.white &-breadcrumbs > * {
-			color:  rgba(31, 71, 43, 0.50);
 
-		}
-		&-image {
-			display: block;
-			max-width: 190px;
-			margin: 0 auto;
-		}
-		&-number {
-			width: 40px;
-			height: 40px;
-			border: 1px solid $white;
-			border-radius: 1000px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			margin: 0 auto 20px auto;
-		}
+        &.light &-breadcrumbs > * {
+            color: #1f472b80;
+        }
+
+        &.white &-breadcrumbs > * {
+            color: rgba(31, 71, 43, 0.5);
+        }
+
+        &-image {
+            display: block;
+            max-width: 190px;
+            margin: 0 auto;
+        }
+
+        &-number {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $white;
+            border-radius: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto 20px auto;
+        }
+
         &-text {
             margin: 0 0 20px 0;
             text-transform: uppercase;
             text-align: center;
         }
+
         &-title {
             margin: 20px 0 0 0;
             text-transform: uppercase;
             text-align: center;
-			line-height: 130% !important;
+            line-height: 130% !important;
         }
     }
 }

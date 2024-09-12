@@ -107,6 +107,48 @@ new Swiper('.letters__slider', {
 		},
 	},
 });
+new Swiper('.project-slider', {
+	modules: [Navigation],
+	slidesPerView: 2,
+	spaceBetween: 20,
+	loop:true,
+	slidesOffsetBefore: 2,
+	navigation: {
+		nextEl: '.cooperation__projects-slider__next',
+		prevEl: '.cooperation__projects-slider__prev',
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1.2,
+		},
+		720: {
+			slidesPerView: 2,
+		},
+		820: {
+			slidesPerView: 4,
+		},
+	},
+});
+new Swiper('.project__examples__slider', {
+	modules: [Navigation],
+	slidesPerView: 2,
+	spaceBetween: 20,
+	loop:true,
+	slidesOffsetBefore: 2,
+	navigation: {
+		nextEl: '.project__examples-prev',
+		prevEl: '.project__examples-next',
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+		},
+		820: {
+			slidesPerView: 4,
+		},
+	},
+});
+
 
 new Accordion(['.home__working-row', '.home__question-row__items']);
 

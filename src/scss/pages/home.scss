@@ -617,14 +617,20 @@
         &-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap:60px 20px ;
             margin-bottom: 60px;
 
             &__item {
                 & > img {
                     width: 100%;
-                    margin-bottom: 10px;
+
                 }
+				&>a>img{
+					max-height: 454px;
+					height: 100%;
+					margin-bottom: 10px;
+
+				}
 
                 &-names {
                     display: flex;
@@ -638,7 +644,7 @@
                 }
 
                 &-date {
-                    color: var(--, rgba(31, 71, 43, 0.5));
+                    color: rgba(31, 71, 43, 0.5);
                 }
             }
 
