@@ -131,14 +131,9 @@
         gap: 10px;
 
         & > a {
-            display: block;
-            color: $white;
-
-            > svg {
-                display: block;
+            > img {
                 height: 42px;
                 width: auto;
-                fill: #f3f4f1;
             }
         }
 
@@ -148,16 +143,12 @@
             margin-top: auto;
             gap: 5px;
 
-            & > a {
-                display: block;
-                color: $white;
-
-                > svg {
-                    fill: #f3f4f1;
-                    height: 22px;
-                    width: 63px;
-                }
-            }
+			& > a {
+				> img {
+					height: 22px;
+					width: auto;
+				}
+			}
 
             &__text {
                 color: $grey;
@@ -231,12 +222,12 @@
 
 @media (max-width: 520px) {
     .footer {
-        padding-bottom:80px;
+        padding-bottom: 80px;
 
         &__content {
             gap: 0;
             position: relative;
-			padding-bottom: 80px;
+            padding-bottom: 80px;
         }
 
         &__contacts {
@@ -244,7 +235,7 @@
 
             &-props {
                 font-size: 14px;
-				margin-top: 0;
+                margin-top: 0;
             }
 
             &-privacy {
@@ -289,9 +280,9 @@
             height: 150px;
 
             &-link {
-				position: absolute;
-				bottom: -60px;
-				left: 0;
+                position: absolute;
+                bottom: -60px;
+                left: 0;
             }
         }
     }

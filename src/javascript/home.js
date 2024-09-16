@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Accordion from 'accordion-js';
@@ -28,6 +28,12 @@ new Swiper('.home__client-slider', {
 	slidesPerView: 4,
 	spaceBetween: 0,
 	loop:true,
+	modules: [Autoplay],
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+	speed: 3000,
 	breakpoints: {
 		0: {
 			slidesPerView: 2,
@@ -46,6 +52,12 @@ new Swiper('.home__partners-slider', {
 	slidesPerView: 4,
 	spaceBetween: 0,
 	loop:true,
+	modules: [Autoplay],
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+	speed: 3000,
 	breakpoints: {
 		0: {
 			slidesPerView: 2,
@@ -135,6 +147,7 @@ new Swiper('.project__examples__slider', {
 	spaceBetween: 20,
 	loop:true,
 	slidesOffsetBefore: 2,
+
 	navigation: {
 		nextEl: '.project__examples-prev',
 		prevEl: '.project__examples-next',
