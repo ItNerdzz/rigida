@@ -629,7 +629,7 @@
             gap: 60px 20px;
             margin-bottom: 60px;
 
-			&:not(.active) {
+			&.tab-content:not(.active) {
 				display: none;
 			}
 

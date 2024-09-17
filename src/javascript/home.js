@@ -163,7 +163,12 @@ new Swiper('.project__examples__slider', {
 });
 
 
-new Accordion(['.home__working-row', '.home__question-row__items']);
+if (document.querySelector('.home__working-row')) {
+	new Accordion('.home__working-row');
+}
+if (document.querySelector('.home__question-row__items')) {
+	new Accordion('.home__question-row__items');
+}
 
 const { innerWidth } = window;
 const isMobile = innerWidth < 1200;
