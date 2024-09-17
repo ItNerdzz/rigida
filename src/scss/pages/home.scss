@@ -606,14 +606,15 @@
             width: fit-content;
             margin-bottom: 80px;
 
-            & > button {
-                color: $green;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 100%;
+            & > .button {
                 max-width: 212px;
                 display: block;
+
+				&.active .button__content {
+						background: $green;
+						color: $white;
+
+				}
             }
         }
 
@@ -627,6 +628,10 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 60px 20px;
             margin-bottom: 60px;
+
+			&:not(.active) {
+				display: none;
+			}
 
             &__item {
                 & img {
@@ -728,6 +733,7 @@
                             text-transform: uppercase;
                             margin: 0 0 20px;
                             width: 70%;
+							cursor: pointer;
                         }
 
                         &-text {

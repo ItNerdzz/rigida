@@ -557,20 +557,20 @@
             </section>
             <section class="home__projects">
                 <div class="wrapper">
-                    <div class="home__projects-content">
+                    <div class="home__projects-content tabs">
                         <h2 class="h2 home__projects-title">воплощаем ваши идеи в реальность</h2>
                         <div class="home__projects-buttons">
-                            <button class="button">
+                            <button class="button tab-trigger active" data-tab="0">
                                 <span class="button__content">ВСЕ ПРОЕКТЫ</span>
                             </button>
-                            <button class="button">
+                            <button class="button tab-trigger" data-tab="1">
                                 <span class="button__content">ЖИЛЫЕ</span>
                             </button>
-                            <button class="button">
+                            <button class="button tab-trigger" data-tab="2">
                                 <span class="button__content">КОММЕРЧЕСКИЕ</span>
                             </button>
                         </div>
-                        <div class="home__projects-row">
+                        <div data-tab="0" class="home__projects-row tab-content active">
                             <div class="home__projects-row__item home__projects-row__wide">
                                 <a href="/"> <img src="/images/project/1.png" alt="img" /></a>
                                 <div class="home__projects-row__item-names">
@@ -617,6 +617,100 @@
                                 </div>
                             </div>
                         </div>
+                        <div data-tab="1" class="home__projects-row tab-content">
+                            <div class="home__projects-row__item home__projects-row__wide">
+                                <a href="/"> <img src="/images/project/1.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">
+                                        Офис компании “АГЕНСТВО ПО ПРИВЛЕЧЕНИЮ ИНВЕСТИЦИЙ КРАСНОДАРСКОГО КРАЯ” 1
+                                    </a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__placeholder"></div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/2.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title"
+                                        >Офис компании DOGMA г. Москва 1</a
+                                    >
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/3.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">Фитнес-клуб “BALANCE” 1</a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__placeholder"></div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/4.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">
+                                        Трехкомнатная квартира бизнес-класса ЖК “РЕНЕССАНС” 1
+                                    </a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__item">
+                                <a href="/"> <img src="/images/project/5.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title"
+                                        >Гостевой комплекс ст.Убинская 1</a
+                                    >
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab="2" class="home__projects-row tab-content">
+                            <div class="home__projects-row__item home__projects-row__wide">
+                                <a href="/"> <img src="/images/project/1.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">
+                                        Офис компании “АГЕНСТВО ПО ПРИВЛЕЧЕНИЮ ИНВЕСТИЦИЙ КРАСНОДАРСКОГО КРАЯ” 2
+                                    </a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__placeholder"></div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/2.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title"
+                                        >Офис компании DOGMA г. Москва 2</a
+                                    >
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/3.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">Фитнес-клуб “BALANCE” 2</a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__placeholder"></div>
+                            <div class="home__projects-row__item">
+                                <a href=""> <img src="/images/project/4.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title">
+                                        Трехкомнатная квартира бизнес-класса ЖК “РЕНЕССАНС” 2
+                                    </a>
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                            <div class="home__projects-row__item">
+                                <a href="/"> <img src="/images/project/5.png" alt="img" /></a>
+                                <div class="home__projects-row__item-names">
+                                    <a href="/" class="text home__projects-row__item-title"
+                                        >Гостевой комплекс ст.Убинская 2</a
+                                    >
+                                    <p class="subtext text home__projects-row__item-date">2023</p>
+                                </div>
+                            </div>
+                        </div>
                         <button class="button home__projects-button button button__rotate">
                             <span class="button__content">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</span>
                             <span class="button__icon">
@@ -643,7 +737,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 знакомство и анализ потребностей
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -676,7 +770,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 проектирование
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -710,7 +804,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 подбор материалов и мебели
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -744,7 +838,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 договор
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -778,7 +872,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 РЕАЛИЗАЦИЯ ПРОЕКТА
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -812,7 +906,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 финальная отделка
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -845,7 +939,7 @@
                                 <div class="home__working-row__item-description">
                                     <div class="home__working-row__item-description__content">
                                         <div class="ac-header">
-                                            <h3 class="h3 home__working-row__item-description__content-title">
+                                            <h3 class="h3 home__working-row__item-description__content-title ac-trigger">
                                                 передача проекта
                                             </h3>
                                             <p class="subtext home__working-row__item-description__content-text">
@@ -1558,7 +1652,7 @@
                     </div>
                     <div class="footer__feedback">
                         <a href="#">
-							<img src="/images/jandex-log0.png" alt="jandex">
+							<img src="/images/yandex-logo.png" alt="jandex">
                         </a>
                         <a href="#">
 							<img src="/images/2gis.png" alt="2gis">
