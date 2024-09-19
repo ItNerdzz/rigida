@@ -110,23 +110,24 @@ a {
             font-size: 14px;
             margin-bottom: 40px;
 
-            & > * {
+            & *,
+			& * a {
                 color: #f3f4f180;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 14px;
             }
 
-            & > a:hover {
+            & * a:hover {
                 text-decoration: underline;
             }
         }
 
-        &.light &-breadcrumbs > * {
+        &.light &-breadcrumbs * {
             color: #1f472b80;
         }
 
-        &.white &-breadcrumbs > * {
+        &.white &-breadcrumbs * {
             color: rgba(31, 71, 43, 0.5);
         }
 
