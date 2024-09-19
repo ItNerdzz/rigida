@@ -2,9 +2,9 @@ const POPUP_CLASSNAME_HIDDEN = 'popup-hidden';
 const POPUP_CLASSNAME_SHOW = 'popup-show';
 const POPUP_DURATION = 450;
 
-window.onload = function () {
+window.addEventListener('load', function () {
     document.body.addEventListener('click', handlePopupActions);
-};
+});
 
 function handlePopupActions(e) {
     const openButton = e.target.closest('.open-popup');

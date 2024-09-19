@@ -129,6 +129,7 @@
 @media (max-width: 1200px) {
     .header {
         &__burger {
+			transition: 0.2s;
             &.opened {
                 transform: rotate(90deg);
             }
@@ -199,6 +200,10 @@
 
         &__burger {
             display: block;
+
+			.button__icon {
+				background: $green !important;
+			}
         }
 
         &__contacts {
