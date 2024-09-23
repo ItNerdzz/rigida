@@ -108,6 +108,15 @@
 			padding: 40px 0;
 			background: #F3F4F1;
 		}
+		&-news {
+			&__slider {
+				.cooperation__projects-card {
+					img {
+						max-height: 450px;
+					}
+				}
+			}
+		}
     }
 }
 
