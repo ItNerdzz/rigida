@@ -50,8 +50,13 @@
             display: none;
 
             & a {
-                color: rgba(31, 71, 43, 0.5);
-                transition: 0.2s;
+				color: #1F472B80 !important;
+				transition: 0.2s;
+				width: fit-content;
+
+				&:hover {
+					color: $green !important;
+				}
             }
 
             & .menu-item {
@@ -78,6 +83,26 @@
                 text-align: center;
                 line-height: 100%;
             }
+
+			&-has-children {
+				& > a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap:8px;
+
+					&:after {
+						content: "";
+						display: block;
+						width: 7px;
+						height: 7px;
+						border: 2px solid $green;
+						transform: rotate(45deg);
+						border-left: none;
+						border-top: none;
+					}
+				}
+			}
 
             &:hover .sub-menu {
                 display: block;
@@ -166,13 +191,15 @@
 
                 a {
                     width: 100%;
-                    display: block;
+					text-align: center;
                 }
             }
 
             & .sub-menu {
                 position: initial;
-                display: block;
+                display: flex !important;
+				flex-direction: column;
+				align-items: center;
                 transition: 0.2s;
                 overflow: hidden;
                 padding-top: 0;
