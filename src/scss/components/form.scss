@@ -95,6 +95,10 @@
 		margin: 0;
     }
 
+	&__wrapper .wpcf7-form-control-wrap {
+		display: none;
+	}
+
 	&__wrapper:has(input:checked) &__mask {
 		&:after {
 			opacity: 1;
