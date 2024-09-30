@@ -137,7 +137,7 @@ new Swiper('.letters__slider', {
         },
     },
 });
-new Swiper('.project-slider', {
+new Swiper('.projects-slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,

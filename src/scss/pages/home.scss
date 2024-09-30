@@ -910,6 +910,10 @@
         padding: 100px 0;
         background: $grey;
 
+		&.light {
+			background: $white;
+		}
+
         &-title {
             color: $black;
             text-transform: uppercase;
