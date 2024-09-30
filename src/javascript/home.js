@@ -117,11 +117,10 @@ new Swiper('.letters__slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
     slidesOffsetBefore: 2,
     navigation: {
-        nextEl: '.letters__slider-next',
-        prevEl: '.letters__slider-prev',
+        nextEl: '.letters__slider-prev',
+        prevEl: '.letters__slider-next',
     },
     breakpoints: {
         0: {
