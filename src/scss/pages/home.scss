@@ -441,13 +441,13 @@
         }
 
         &-video {
-            &__placeholder {
                 position: relative;
                 width: 100%;
                 height: calc(100% - 57px);
                 overflow: hidden;
 
-                iframe {
+                iframe,
+				video {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -455,7 +455,6 @@
                     height: 100%;
                     border: none;
                 }
-            }
         }
     }
 
