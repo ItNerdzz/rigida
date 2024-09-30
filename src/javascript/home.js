@@ -182,7 +182,7 @@ new Swiper('.project__examples__slider', {
 new Swiper('.home__reviews-slider', {
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     slidesOffsetBefore: 2,
     breakpoints: {
         0: {

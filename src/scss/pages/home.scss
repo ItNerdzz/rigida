@@ -1038,8 +1038,10 @@
     }
 
     &__reviews {
+		max-width: 100vw;
         padding: 100px 0;
         background: $grey;
+		overflow: hidden;
 
         &-title {
             color: $black;
