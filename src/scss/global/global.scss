@@ -31,7 +31,7 @@ body.static {
 }
 
 body:has(header.header) {
-    padding-top: 81px;
+    padding-top: 51px;
 }
 
 body main {
@@ -179,6 +179,9 @@ a {
 }
 
 @media screen and (max-width: 920px) {
+	body:has(header.header) {
+		padding-top: 34px;
+	}
 }
 
 @media screen and (max-width: 680px) {

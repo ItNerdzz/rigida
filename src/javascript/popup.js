@@ -69,3 +69,19 @@ function fadeOut(el) {
         el.style.display = 'none';
     }, POPUP_DURATION);
 }
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+	const popup = document.querySelector(`.popup[data-popup="home-thank-you"]`);
+
+	if (!popup) {
+		throw new Error('Popup to be opened is not found');
+	}
+
+	const openedPopup = document.querySelector('.popup.popup-show');
+	if (openedPopup) {
+		fadeOut(openedPopup);
+	}
+
+	fadeIn(popup);
+	toggleBodyStatic(true);
+}, false );
