@@ -73,7 +73,7 @@ new Swiper('.cooperation__projects-slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     slidesOffsetBefore: 2,
     navigation: {
         nextEl: '.cooperation__projects-slider__next',
@@ -95,7 +95,7 @@ new Swiper('.story__long-news__slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     slidesOffsetBefore: 2,
     navigation: {
         nextEl: '.cooperation__projects-slider__next',
@@ -141,7 +141,7 @@ new Swiper('.projects-slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     slidesOffsetBefore: 2,
     navigation: {
         nextEl: '.cooperation__projects-slider__next',
@@ -163,7 +163,7 @@ new Swiper('.project__examples__slider', {
     modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    // loop: true,
     slidesOffsetBefore: 2,
 
     navigation: {
