@@ -1,3 +1,9 @@
+@media (pointer:coarse) {
+	.header {
+		width: 100% !important;
+	}
+}
+
 .header {
     padding: 20px 0;
     border-bottom: 1px solid $green-light;
@@ -6,7 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: calc(100vw - 17px);
     z-index: 10;
 
     &__content {
