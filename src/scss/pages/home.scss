@@ -534,7 +534,6 @@
             gap: 20px;
             height: 100%;
             display: flex;
-            max-width: 50%;
             flex-direction: column;
             justify-content: space-between;
 
@@ -545,8 +544,9 @@
             }
 
             &__image {
+				height: 100%;
                 width: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -557,7 +557,8 @@
         }
 
         &-button {
-            margin-top: 50px;
+			margin-top: auto;
+            padding-top: 50px;
         }
 
         &-item {
