@@ -3,6 +3,18 @@
         position: relative;
         overflow: hidden;
 
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: #000;
+			opacity: 0.3;
+			z-index: -1;
+		}
+
         &:after {
             position: absolute;
             content: '';
@@ -360,12 +372,13 @@
                 max-width: 470px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: flex-end;
                 height: 100%;
             }
 
             &__title {
-                margin: 0 0 40px 0;
+                margin: 0 0 auto 0;
+				padding-bottom: 40px;
             }
 
             &__texts {
@@ -448,15 +461,16 @@
             height: calc(100% - 57px);
             overflow: hidden;
 
-            iframe,
-            video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border: none;
-            }
+                iframe,
+				video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+					object-fit: cover;
+                    border: none;
+                }
         }
     }
 
@@ -478,8 +492,8 @@
             gap: 20px;
 
             & > img {
-                max-width: 330px;
-                max-height: 455px;
+                //max-width: 330px;
+                //max-height: 455px;
                 width: 100%;
                 height: 100%;
                 align-self: flex-end;
@@ -535,7 +549,6 @@
             gap: 20px;
             height: 100%;
             display: flex;
-            max-width: 50%;
             flex-direction: column;
             justify-content: space-between;
 
@@ -546,8 +559,9 @@
             }
 
             &__image {
+				height: 100%;
                 width: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -558,7 +572,8 @@
         }
 
         &-button {
-            margin-top: 50px;
+			margin-top: auto;
+            padding-top: 50px;
         }
 
         &-item {
@@ -634,7 +649,7 @@
         &-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 60px 20px;
+            gap: 40px 20px;
             margin-bottom: 60px;
 
             &.tab-content:not(.active) {
@@ -643,8 +658,7 @@
 
             &__item {
                 & img {
-                    max-height: 454px;
-                    height: 100%;
+                    height: 454px;
                     width: 100%;
                     margin-bottom: 10px;
                     object-fit: cover;
@@ -659,11 +673,11 @@
 
                 &-title {
                     color: $black;
-                    max-width: 80%;
+                    max-width: 90%;
                 }
 
                 &-date {
-                    color: rgba(31, 71, 43, 0.5);
+                    color: $green-light-transparent
                 }
             }
 
@@ -723,7 +737,7 @@
                     }
 
                     & > p {
-                        color: rgba(31, 71, 43, 0.5);
+                        color: $green-light-transparent
                     }
                 }
 
@@ -745,7 +759,7 @@
                         }
 
                         &-text {
-                            color: rgba(31, 71, 43, 0.5);
+                            color: $green-light-transparent;
                             text-transform: uppercase;
                             margin: 0 0 40px;
                         }
@@ -832,7 +846,8 @@
                 }
 
                 &-text {
-                    color: rgba(31, 71, 43, 0.5);
+                    //color: rgba(31, 71, 43, 0.5);
+					color: $green-light-transparent;
                     text-align: center;
                     margin-bottom: 60px;
                 }
@@ -1154,8 +1169,8 @@
                     background: $green;
 
                     & > svg {
-                        width: 20px;
-                        height: 20px;
+                        width: 30px;
+                        height: 30px;
                         color: $grey;
                     }
                 }
@@ -1199,7 +1214,7 @@
 
             &__text {
                 width: 100%;
-                color: rgba(31, 71, 43, 0.5);
+                color: $green-light-transparent;
                 margin: 74px 0 40px;
             }
 
@@ -1285,7 +1300,7 @@
                 margin: 0;
             }
 
-            &__content {
+            &__content-high {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -1293,6 +1308,10 @@
                 height: 100%;
                 gap: 86px;
             }
+
+			&__content {
+				gap: 156px;
+			}
 
             &__title {
                 margin: 12px 0 0 0;
@@ -1335,10 +1354,18 @@
                 width: 100%;
             }
 
-            &-text {
-                max-width: calc(50% - 10px);
-            }
-        }
+			&-text {
+				max-width: calc(50% - 10px);
+			}
+		}
+
+		&__projects {
+			&-row {
+				&__item img {
+					height: 360px;
+				}
+			}
+		}
     }
 }
 
