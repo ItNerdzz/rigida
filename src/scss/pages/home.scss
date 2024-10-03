@@ -676,7 +676,7 @@
                 }
 
                 &-date {
-                    color: rgba(31, 71, 43, 0.5);
+                    color: $green-light-transparent
                 }
             }
 
@@ -736,7 +736,7 @@
                     }
 
                     & > p {
-                        color: rgba(31, 71, 43, 0.5);
+                        color: $green-light-transparent
                     }
                 }
 
@@ -758,7 +758,7 @@
                         }
 
                         &-text {
-                            color: rgba(31, 71, 43, 0.5);
+                            color: $green-light-transparent;
                             text-transform: uppercase;
                             margin: 0 0 40px;
                         }
@@ -844,7 +844,8 @@
                 }
 
                 &-text {
-                    color: rgba(31, 71, 43, 0.5);
+                    //color: rgba(31, 71, 43, 0.5);
+					color: $green-light-transparent;
                     text-align: center;
                     margin-bottom: 60px;
                 }
@@ -1200,7 +1201,7 @@
 
             &__text {
                 width: 100%;
-                color: rgba(31, 71, 43, 0.5);
+                color: $green-light-transparent;
                 margin: 74px 0 40px;
             }
 
