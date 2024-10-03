@@ -68,6 +68,11 @@
             grid-template-columns: 2fr 1fr 1fr;
             gap: 20px;
         }
+		&-row-alt {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
         &-data {
             max-width: 490px;
             display: flex;
