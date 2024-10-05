@@ -300,16 +300,16 @@
         }
 
         &__feedback {
-            order: 3;
-            margin-left: auto;
-            margin-right: 70px;
-            margin-top: -265px;
-            height: 150px;
+			margin-bottom: -100%;
+			transform: translateY(calc(-100% - 110px));
+			margin-left: auto;
+			height: fit-content;
 
             &-link {
-                position: absolute;
-                bottom: -60px;
-                left: 0;
+				position: absolute;
+				bottom: -263%;
+				right: auto;
+				left: calc(-100% - 20px);
             }
         }
     }

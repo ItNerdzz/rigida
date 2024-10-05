@@ -201,20 +201,26 @@
                 }
             }
 
+			.menu-item-has-children > a:after {
+				display: none;
+			}
+
             & .sub-menu {
                 position: initial;
-                display: flex !important;
 				flex-direction: column;
+				gap:30px;
 				align-items: center;
-                transition: 0.2s;
-                overflow: hidden;
-                padding-top: 0;
-                max-height: 0;
 
-                &.opened {
-                    padding-top: 10px;
-                    max-height: 100px;
-                }
+				//display: flex !important;
+				display: none !important;
+
+				a {
+					color: $black !important;
+				}
+
+				.menu-item {
+					margin: 0;
+				}
             }
 
             &-mobile {
