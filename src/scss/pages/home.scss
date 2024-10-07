@@ -1272,6 +1272,7 @@
             grid-template-columns: 40px 1fr;
             align-items: flex-start;
             gap: 10px;
+			height: 260px;
 
             &.grey {
                 background: $grey;
@@ -1310,7 +1311,11 @@
             }
 
 			&__content {
-				gap: 156px;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				justify-content: space-between;
+				height: 100%;
 			}
 
             &__title {
