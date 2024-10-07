@@ -220,7 +220,7 @@ if (isMobile) {
     const submenuButtons = document.querySelectorAll('.menu-item-has-children > a');
     submenuButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
-            e.preventDefault();
+            // e.preventDefault();
 			const currentMenu = button.closest('.menu-item-has-children');
             const currentSubmenu = currentMenu.querySelector('.sub-menu');
             const isOpened = currentSubmenu.classList.contains('opened');
